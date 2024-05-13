@@ -1,0 +1,35 @@
+/* Footer.css */
+
+.footer {
+    background-color: #003366;
+    color: white;
+    padding: 20px 0; /* Ajusta el padding para dejar espacio en los lados */
+    text-align: center;
+  }
+  
+  .footer-columns {
+    display: flex;
+    justify-content: center; /* Centra las columnas horizontalmente */
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    text-align: left;
+    flex: 0 1 auto; /* Permite que las columnas se ajusten automáticamente */
+    margin: 20px; /* Elimina el margen entre las columnas */
+  }
+  
+  .footer-column h4 {
+    font-weight: bold;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Elimina el margen dentro de la lista */
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 5px;
+  }
+  

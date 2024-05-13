@@ -1,0 +1,46 @@
+/* En NavBar.css */
+.navbar {
+    background-color: #003366;
+    padding: 15px 70px;
+    display: flex;
+    justify-content: space-between; /* Espacio uniforme entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+  }
+  
+  .navbar-left {
+    display: flex;
+  }
+  
+  .navbar-right {
+    display: flex;
+  }
+  
+  .navbar-link {
+    color: white;
+    margin-left: 70px;
+    margin-right: 20px; /* Ajusta el margen entre los elementos del grupo izquierdo */
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  .navbar-link:hover {
+    color: black; /* Cambia el color al sombrear */
+  }
+  
+  
+  .cita-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-right: 200px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .cita-button:hover{
+    color:black
+  }
+ 
