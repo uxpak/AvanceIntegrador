@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     height: 80vh; /* Reducimos la altura para centrarlo mejor */
-    width: 75%; /* Ancho del container */
+    width: 65%; /* Ancho del container */
     margin: 0 auto; /* Centrar el container */
     margin-top: 50px; /* Distancia del navbar */
     margin-bottom: 50px; /* Distancia del footer */
@@ -89,6 +89,13 @@
     margin-bottom: 10px;
     text-decoration: none;
 }
+
+.forgot-password a {
+    margin-top: 50px;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: inherit; /* Utiliza el color heredado del contenedor */
+}
+
 
 .social-login {
     text-align: center;

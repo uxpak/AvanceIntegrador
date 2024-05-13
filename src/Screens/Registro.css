@@ -1,7 +1,7 @@
 .registro-container {
     display: flex; /* Activar flexbox en el contenedor principal */
     justify-content: space-between; /* Distribuir los elementos horizontalmente */
-    width: 75%;
+    width: 65%;
     margin: 50px auto;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -11,7 +11,7 @@
 .company-photo {
     width: 50%;
     height: 300px;
-    padding: 10px;
+    margin-top: 70px;
     background-image: url('/public/persona.jpg');
     background-size: cover;
     justify-content: center; /* Centrar horizontalmente */
@@ -26,7 +26,6 @@
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-
 
 
 .registro-form h1 {
@@ -57,6 +56,23 @@
     font: bold;
     box-sizing: border-box;
 }
+.registro-form select.registro-button {
+    width: calc(30rem + 2px); /* Ancho deseado */
+    padding: 15px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font: bold;
+    box-sizing: border-box;
+    background-color: white;
+    color: #3b3e98;
+    font-size: 16px;
+}
+
+.registro-form select.registro-button:hover {
+    background-color: #f0f0f0;
+}
+
 
 .registro-button {
     width: calc(30rem + 2px);
@@ -76,7 +92,7 @@
 }
 
 .social-login {
-    text-align: center;
+    text-align: right;
 }
 
 .social-buttons {
@@ -88,10 +104,43 @@
 .facebook-button {
     margin-right: 10px;
     padding: 15px 20px;
+    height: 60px;
+    width: 238px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
+
+.password-input {
+    position: relative;
+}
+
+.password-input input {
+    width: calc(100% - 100px); /* Ancho del input menos el botón */
+    padding: 15px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font: bold;
+    box-sizing: border-box;
+}
+
+.password-input button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px; /* Ancho del botón */
+    height: 100%;
+    padding: 15px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.password-input button:focus {
+    outline: none;
+}
+
 
 .google-button {
     background-color: #dd4b39;

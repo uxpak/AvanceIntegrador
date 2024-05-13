@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useState } from 'react'; // Importa useState desde React
 import { Link } from "react-router-dom";
 import "./Registro.css";
 
 const Registro = () => {
+    const [showPassword, setShowPassword] = useState(false);
+    const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+    const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+
+    const togglePasswordVisibility = () => {
+        setShowPassword(!showPassword);
+    };
+
+    const toggleConfirmPasswordVisibility = () => {
+        setShowConfirmPassword(!showConfirmPassword);
+    };
     return (
         <div className="registro-container">
             <div className="company-photo"></div>
@@ -36,20 +48,48 @@ const Registro = () => {
                     </div>
                     <div className="form-group">
                         <label htmlFor="genero">Género:</label>
-                        <select id="genero" name="genero">
+                        <select id="genero" name="genero" className="registro-button">
                             <option value="masculino">Masculino</option>
                             <option value="femenino">Femenino</option>
-                            <option value="otro">Otro</option>
                         </select>
                     </div>
+
                     <div className="form-group">
                         <label htmlFor="password">Contraseña:</label>
-                        <input type="password" id="password" name="password" />
+                        <input
+                            type={showPassword ? 'text' : 'password'}
+                            id="password"
+                            name="password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                        /> <button
+                            type="button"
+                            onClick={togglePasswordVisibility}
+                            className="password-toggle-button"
+                        >
+                            {showPassword ? '🙈' : '👁️'}
+                        </button>
+
                     </div>
+
                     <div className="form-group">
-                        <label htmlFor="confirm_password">Confirma Contraseña:</label>
-                        <input type="password" id="confirm_password" name="confirm_password" />
+                        <label htmlFor="confirm_password">Confirmar Contraseña:</label>
+                        <input
+                            type={showConfirmPassword ? 'text' : 'password'}
+                            id="confirm_password"
+                            name="confirm_password"
+                            value={confirmPassword}
+                            onChange={(e) => setConfirmPassword(e.target.value)}
+                        /> <button
+                            type="button"
+                            onClick={toggleConfirmPasswordVisibility}
+                            className="password-toggle-button"
+                        >
+                            {showConfirmPassword ? '🙈' : '👁️'}
+                        </button>
+
                     </div>
+
                     <button type="submit" className="registro-button">REGISTRARSE</button>
                 </form>
                 <div className="social-login">
