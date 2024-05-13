@@ -13,7 +13,7 @@
     margin-bottom: 50px; /* Distancia del footer */
     border: 1px solid #ccc; /* Borde */
     border-radius: 10px; /* Ajusta el border-radius */
-    color: #3b3e98;
+    color: black; /*
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
@@ -22,7 +22,7 @@
 .company-photo {
     width: 25px;
     height: 25px;
-    padding: 400px;
+    padding: 300px;
     background-image: url('/public/persona.jpg');
     background-size: cover;
     justify-content: center; /* Centrar horizontalmente */
@@ -38,7 +38,7 @@
 }
 
 .login-form h1 {
-    color: #3b3e98;
+    color: black;
     margin-top: 0;
 }
 
@@ -98,7 +98,7 @@
 
 
 .social-login {
-    text-align: center;
+    text-align: left;
 }
 
 .social-buttons {
