@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Importa Link desde react-router-dom
 import "./Contact.css";
 
 const Login = () => {
@@ -7,7 +8,7 @@ const Login = () => {
             <div className="company-photo"></div>
             <div className="login-form">
                 <h1>Iniciar Sesión</h1>
-                <h4>¿No tienes una cuenta? Crea una</h4>
+                <h4>¿No tienes una cuenta? <Link to="/registro">Crea una</Link></h4> 
                 <form>
                     <div className="form-group">
                         <label htmlFor="email">Email:</label>
@@ -17,7 +18,7 @@ const Login = () => {
                         <label htmlFor="password">Contraseña:</label>
                         <input type="password" id="password" name="password" />
                     </div>
-                    <button type="submit" className="login-button">Iniciar </button>
+                    <button type="submit" className="login-button">INICIAR SESION</button>
                 </form>
                 <div className="forgot-password">
                     <a href="#">¿Olvidaste tu contraseña?</a>

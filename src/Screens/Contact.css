@@ -20,13 +20,13 @@
 /* Resto del CSS... */
 
 .company-photo {
-    flex: 1; /* Toma el 50% del ancho del container */
-    background-image: url('/public/persona.jpg'); /* Ruta de la imagen de la empresa */
+    width: 25px;
+    height: 25px;
+    padding: 400px;
+    background-image: url('/public/persona.jpg');
     background-size: cover;
-    background-position: center;
-    height: 100%;
-    border-top-left-radius: 10px; /* Ajusta el border-radius */
-    border-bottom-left-radius: 10px; /* Ajusta el border-radius */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
 }
 
 .login-form {
@@ -34,7 +34,7 @@
     padding: 20px;
     border-top-right-radius: 10px; /* Ajusta el border-radius */
     border-bottom-right-radius: 10px; /* Ajusta el border-radius */
-     /* Color de fondo del formulario */
+    background-color: white;
 }
 
 .login-form h1 {
