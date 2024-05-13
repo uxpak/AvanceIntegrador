@@ -17,7 +17,7 @@ const Login = () => {
                         <label htmlFor="password">Contraseña:</label>
                         <input type="password" id="password" name="password" />
                     </div>
-                    <button type="submit" className="login-button">Iniciar Sesión</button>
+                    <button type="submit" className="login-button">Iniciar </button>
                 </form>
                 <div className="forgot-password">
                     <a href="#">¿Olvidaste tu contraseña?</a>
