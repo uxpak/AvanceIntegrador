@@ -18,7 +18,6 @@ const Staff = () => {
 
   return (
     <div>
-      {/* Sección superior con imagen */}
       <section className="top-section">
         <div className="company-info">
           <h1>VitalCare</h1>
