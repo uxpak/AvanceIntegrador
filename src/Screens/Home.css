@@ -83,6 +83,10 @@ body {
     font-size: 40px;
 }
 
+.home-company-info h1{
+    text-align: left;
+}
+
 
 .home-company-info button {
     padding: 30px 50px;
@@ -106,7 +110,7 @@ body {
 
 .home-services-section {
     padding: 50px 20px;
-    background-color: #fff;
+    background-color: white;
     display: flex;
     text-align: center;
 }
@@ -114,7 +118,7 @@ body {
 .home-services-list {
     width: 12%; /* Ocúpalo solo el 20% del ancho */
     flex-direction: column;
-    margin-left:10% /* Centra el elemento horizontalmente */
+    margin-left:15% /* Centra el elemento horizontalmente */
 }
 
 
@@ -150,20 +154,86 @@ body {
 
 .home-service-info {
     flex: 1; /* El 100% del ancho restante */
-    /* Resto de estilos */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    text-align: center;
+    padding: 20px;
+    text-align: justify;
+  }
+
+  .home-service-info h1{
+    color: #005bb5;
+  }
+  
+  .service-info-description{
+    font-size:18px;
+  }
+
+  .service-info-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .service-info-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 600px;
+  }
+  
+
+  .service-info-list li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    width: calc(50% - 10px); /* 3 items per column */
+    box-sizing: border-box;
+    display: flex;
+    align-items: justify; /* Centrar las viñetas verticalmente */
+  }
+  
+  .service-info-list li::before {
+    content: '\2022'; /* Código para el símbolo de viñeta (•) */
+    color: #007bff; /* Color de las viñetas */
+    font-size: 40px; /* Tamaño de las viñetas */
+    margin-right: 10px; /* Espacio entre la viñeta y el texto */
+  }
+  
+  
+  .service-info-description {
+    font-size: 18px;
   }
 
   .home-service-img {
-    margin-right: 5%; /* Espacio entre las imágenes y el contenido principal */
+    margin-right: 10%; /* Espacio entre las imágenes y el contenido principal */
     display: flex;
     flex-direction: column; /* Mostrar las imágenes una encima de la otra */
     max-height: 600px; /* Altura máxima para evitar que las imágenes sobrepasen la sección */
     overflow: hidden; /* Ocultar cualquier parte de las imágenes que exceda la altura máxima */
 }
-
 .home-service-img img {
-    width: auto; /* Permitir que el ancho se ajuste automáticamente */
-    height: auto; /* Permitir que la altura se ajuste automáticamente */
-    max-height: 295px; /* Establecer la altura máxima de las imágenes */
-    margin-bottom: 10px; /* Espacio entre las imágenes */
+    width: 405px; /* Establecer el ancho deseado */
+    height: 290px; /* Establecer la altura deseada */
+    margin-bottom: 10px;
+    border-radius: 10px;
+    object-fit: cover; /* Ajustar la imagen manteniendo la proporción y cubriendo el área designada */
 }
+
+
+.home-top-section h1,
+.home-welcome-section h1,
+.home-services-section h1 {
+  text-align: center; /* Centrar el texto */
+}
+
+.selected-section {
+    background-color: #003366;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;/* Cambia el color de fondo para resaltar la sección seleccionada */
+  }
+  
