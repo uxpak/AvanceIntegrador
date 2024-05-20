@@ -1,10 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import "./Nosotros.css";
+import { Link } from "react-router-dom";
+import "./Servicios.css"
 
-
-const Nosotros = () => {
-
+const Servicios = () => {
   return (
     <div className="home-container">
       <section className="home-top-section">
@@ -25,4 +22,4 @@ const Nosotros = () => {
   )
 }
 
-export default Nosotros;
+export default Servicios

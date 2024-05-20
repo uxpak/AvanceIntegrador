@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.home-top-section {
+    background-image: url('/public/doctor.jpeg');
+    background-size: cover;
+    background-position: center bottom;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    position: relative;
+}
+.home-container {
+    padding: 0 0px;
+}
+
+.home-section-title {
+    color: #00aaff;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.home-main-title {
+    color: #003366;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.home-description {
+    color: #666;
+    font-size: 1rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 10px auto;
+}

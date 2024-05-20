@@ -78,23 +78,32 @@ body {
 
 
 .home-company-info {
-    margin-left: 3%; /* Mover la sección de la compañía hacia la izquierda */
+    margin-left: 5%; /* Mover la sección de la compañía hacia la izquierda */
     z-index: 1; /* Asegurarse de que esté en la parte delantera */
     font-size: 40px;
 }
 
-.home-company-info h1{
+.home-company-info-container {
     text-align: left;
 }
 
+.home-company-info h1{
+    font-size: 3rem;
+}
+
+.home-company-info p{
+    font-size:2rem;
+}
 
 .home-company-info button {
-    padding: 30px 50px;
-    background-color: #003366;
-    color: black;
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .home-button-container button:hover, .home-company-info button:hover {

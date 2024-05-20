@@ -20,7 +20,7 @@ const Registro = () => {
             <div className="company-photo"></div>
             <div className="registro-form">
                 <h1>Registro</h1>
-                <h4>¿Ya tienes una cuenta? <Link to="/contact">Inicia sesión</Link></h4>
+                <h4>¿Ya tienes una cuenta? <Link to="/login">Inicia sesión</Link></h4>
                 <form>
                     <div className="form-group">
                         <label htmlFor="nombre">Nombres:</label>

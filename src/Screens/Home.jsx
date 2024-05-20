@@ -1,15 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import "./Home.css";
 
 const Home = () => {
-  const [selectedOption, setSelectedOption] = useState(null);
-  const [showContent, setShowContent] = useState(false);
+  const [selectedOption, setSelectedOption] = useState("Chequeo Gratis"); // Inicializar con el primer servicio
+  const [showContent, setShowContent] = useState(true); 
+
+  useEffect(() => {
+    setShowContent(true); // Mostrar contenido al cargar la página
+  }, []); // Ejecutar solo una vez al montar el componente
+
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
     setShowContent(true);
   };
+
+  
 
   const serviceInfo = {
     "Chequeo Gratis": {
@@ -74,19 +81,19 @@ const Home = () => {
   return (
     <div className="home-container">
       <section className="home-top-section">
-  <div className="home-company-info">
-    <div className="company-info-container">
-      <h1>VitalCare</h1>
-      <p>Cuidamos tu salud<br />Líderes en la excelencia médica</p>
-    </div>
-    <button><Link to="/servicios" className="home-button-link">Nuestros servicios</Link></button>
-  </div>
-  <div className="home-button-container">
-    <button><Link to="/reserva" className="home-button-link">Reserva una cita</Link></button>
-    <button><Link to="/staff" className="home-button-link">Ver staff médico</Link></button>
-    <button><Link to="/servicios" className="home-button-link">Servicios</Link></button>
-  </div>
-</section>
+        <div className="home-company-info">
+          <div className="company-info-container">
+            <h1>VitalCare</h1>
+            <p>Cuidamos tu salud<br />Líderes en la excelencia médica</p>
+          </div>
+          <button><Link to="/servicios" className="home-button-link">Nuestros servicios</Link></button>
+        </div>
+        <div className="home-button-container">
+          <button><Link to="/reserva" className="home-button-link">Reserva una cita</Link></button>
+          <button><Link to="/staff" className="home-button-link">Ver staff médico</Link></button>
+          <button><Link to="/servicios" className="home-button-link">Servicios</Link></button>
+        </div>
+      </section>
 
 
       <section className="home-welcome-section">
@@ -101,10 +108,10 @@ const Home = () => {
 
       <section className="home-services-section">
         <div className="home-services-list">
-        <button className={`home-service-button ${selectedOption === "Chequeo Gratis" ? "selected-section" : ""}`} onClick={() => handleOptionClick("Chequeo Gratis")}>Chequeo Gratis</button>
-<button className={`home-service-button ${selectedOption === "Cardiograma" ? "selected-section" : ""}`} onClick={() => handleOptionClick("Cardiograma")}>Cardiograma</button>
-<button className={`home-service-button ${selectedOption === "Test de ADN" ? "selected-section" : ""}`} onClick={() => handleOptionClick("Test de ADN")}>Test de ADN</button>
-<button className={`home-service-button ${selectedOption === "Banco de Sangre" ? "selected-section" : ""}`} onClick={() => handleOptionClick("Banco de Sangre")}>Banco de Sangre</button>
+          <button className={`home-service-button ${selectedOption === "Chequeo Gratis" ? "selected-section" : ""}`} onClick={() => handleOptionClick("Chequeo Gratis")}>Chequeo Gratis</button>
+          <button className={`home-service-button ${selectedOption === "Cardiograma" ? "selected-section" : ""}`} onClick={() => handleOptionClick("Cardiograma")}>Cardiograma</button>
+          <button className={`home-service-button ${selectedOption === "Test de ADN" ? "selected-section" : ""}`} onClick={() => handleOptionClick("Test de ADN")}>Test de ADN</button>
+          <button className={`home-service-button ${selectedOption === "Banco de Sangre" ? "selected-section" : ""}`} onClick={() => handleOptionClick("Banco de Sangre")}>Banco de Sangre</button>
 
           <button className="home-view-all-button">Ver todo</button>
         </div>

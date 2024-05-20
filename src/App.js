@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer"; // Importa el Footer
 import Home from "./Screens/Home";
@@ -9,6 +9,8 @@ import Login from './Screens/Login';
 import Perfil from './Screens/Perfil';
 import Contact from "./Screens/Contact"; 
 import Nosotros from "./Screens/Nosotros";
+import Servicios from './Screens/Servicios';
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
       <Router>
         <NavBar/>
         <Routes>
+          <Route path="/" element={<Navigate to="/home" replace />} />
           <Route path="/home" element={<Home/>}/>
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/registro" element={<Registro/>}/>
@@ -23,6 +26,7 @@ function App() {
           <Route path="/login" element={<Login/>}/>
           <Route path="/perfil" element={<Perfil/>}/>
           <Route path="/nosotros" element={<Nosotros/>}/>
+          <Route path="/servicios" element={<Servicios/>}/>
         </Routes>
         <Footer /> 
       </Router>
