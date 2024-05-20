@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "./Staff.css";
 
 const Staff = () => {
@@ -22,16 +23,15 @@ const Staff = () => {
         <div className="company-info">
           <h1>VitalCare</h1>
           <p>Cuidamos tu salud<br />Líderes en la excelencia médica</p>
-          <button>Nuestros servicios</button>
+          <button><Link to="/servicios" className="button-link">Nuestros servicios</Link></button>
         </div>
         <div className="button-container">
-          <button>Reservar una cita</button>
-          <button>Ver staff médicos</button>
-          <button>Servicios</button>
+          <button><Link to="/reserva" className="button-link">Reserva una cita</Link></button>
+          <button><Link to="/staff" className="button-link">Ver staff médico</Link></button>
+          <button><Link to="/servicios" className="button-link">Servicios</Link></button>
         </div>
       </section>
 
-      {/* Contenedor de staff médico */}
       <div className="staff-container">
         <h2>Nuestro Equipo Médico</h2>
         <div className="staff-list">
