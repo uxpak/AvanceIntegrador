@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 
 const Home = () => {
-  const [selectedOption, setSelectedOption] = useState("Chequeo Gratis"); // Inicializar con el primer servicio
+  const [selectedOption, setSelectedOption] = useState("Chequeo Gratis"); 
   const [showContent, setShowContent] = useState(true); 
 
   useEffect(() => {
-    setShowContent(true); // Mostrar contenido al cargar la página
-  }, []); // Ejecutar solo una vez al montar el componente
+    setShowContent(true); 
+  }, []); 
 
 
   const handleOptionClick = (option) => {
