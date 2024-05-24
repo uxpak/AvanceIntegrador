@@ -172,6 +172,29 @@ body {
     text-align: justify;
   }
 
+  .home-service-info-container {
+    height: 600px; /* Altura fija deseada */
+    overflow-y: auto; /* Añade desplazamiento vertical si el contenido excede la altura */
+  }
+
+
+/* Cambiar el ancho y color de la barra de desplazamiento */
+.home-service-info-container::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra de desplazamiento */
+  }
+  
+  /* Estilo de la barra de desplazamiento */
+  .home-service-info-container::-webkit-scrollbar-thumb {
+    background-color: #555; /* Color del pulgar de la barra de desplazamiento */
+    border-radius: 4px; /* Borde redondeado del pulgar */
+  }
+  
+  /* Estilo del fondo de la barra de desplazamiento */
+  .home-service-info-container::-webkit-scrollbar-track {
+    background-color: #ddd; /* Color del fondo de la barra de desplazamiento */
+  }
+  
+
   .home-service-info h1{
     color: #005bb5;
   }
@@ -244,5 +267,59 @@ body {
     font-size: 25px;
     color: white;
     font-weight: bold;/* Cambia el color de fondo para resaltar la sección seleccionada */
+  }
+  
+  
+  /* Estilos para la barra de desplazamiento en todo el documento */
+body::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra de desplazamiento */
+    background-color: #f5f5f5; /* Color de fondo de la barra de desplazamiento */
+  }
+  
+  /* Estilo del pulgar de la barra de desplazamiento */
+  body::-webkit-scrollbar-thumb {
+    background-color: #678db3; /* Color del pulgar de la barra de desplazamiento */
+    border-radius: 0px; /* Borde redondeado del pulgar */
+  }
+  
+  /* Estilo del fondo de la barra de desplazamiento */
+  body::-webkit-scrollbar-track {
+    background-color: #f5f5f5; /* Color del fondo de la barra de desplazamiento */
+  }
+  
+  .home-specialties-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .home-specialties-title {
+    margin-bottom: 30px;
+  }
+  
+  .home-specialties-title h2 {
+    font-size: 1.2rem;
+  }
+  
+  .home-specialties-title h1 {
+    font-size: 2rem;
+  }
+  
+  .home-specialties-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .home-specialties-container button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .home-specialties-container button img {
+    width: 100%;
+    border-radius: 10px;
   }
   
