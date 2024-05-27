@@ -6,7 +6,6 @@ import Home from "./Screens/Home";
 import Staff from './Screens/Staff';
 import Registro from "./Screens/Registro";
 import Login from './Screens/Login';
-import Perfil from './Screens/Perfil';
 import Contact from "./Screens/Contact"; 
 import Nosotros from "./Screens/Nosotros";
 import Servicios from './Screens/Servicios';
@@ -24,7 +23,6 @@ function App() {
           <Route path="/registro" element={<Registro/>}/>
           <Route path="/staff" element={<Staff/>}/>
           <Route path="/login" element={<Login/>}/>
-          <Route path="/perfil" element={<Perfil/>}/>
           <Route path="/nosotros" element={<Nosotros/>}/>
           <Route path="/servicios" element={<Servicios/>}/>
         </Routes>

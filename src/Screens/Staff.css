@@ -62,7 +62,7 @@
     width: calc(33.33% - 20px);
     box-sizing: border-box;
     position: relative; /* Para posicionar los íconos y el botón */
-    height: 600px; /* Incrementa la altura del contenedor */
+    height: 500px; /* Incrementa la altura del contenedor */
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Alinear elementos verticalmente */
@@ -70,12 +70,12 @@
   
   .doctor-card img {
     width: 100%;
-    height: 70%; /* Ajusta la altura de la imagen según sea necesario */
+    height: 60%; /* Ajusta la altura de la imagen según sea necesario */
     border-radius: 0px;
   }
   
   .doctor-info {
-    padding: 20px;
+    padding: 10px;
     text-align: center; /* Alinear el texto a la izquierda */
   }
   
