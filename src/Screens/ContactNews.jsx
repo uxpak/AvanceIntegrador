@@ -9,7 +9,7 @@ const ContactNews = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 3000,
+    speed: 6000,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
@@ -72,7 +72,7 @@ const ContactNews = () => {
           <div className="contact-card" onClick={handleLocationClick} style={{ cursor: 'pointer' }}>
             <h4>LOCATION</h4>
             <p>Hospital IV Augusto Hernández Mendoza EsSalud</p>
-            <p>Nazca, Ica, Perú</p>
+            <p>Ica, Ica, Perú</p>
           </div>
           <div className="contact-card">
             <h4>EMAIL</h4>
