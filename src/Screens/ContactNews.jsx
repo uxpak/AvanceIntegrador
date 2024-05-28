@@ -1,7 +1,27 @@
 import React from 'react';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./ContactNews.css";
+import newsData from './newsData'; // Importa los datos de newsData.js
 
 const ContactNews = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 3000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: 'linear',
+    draggable: false,
+  };
+
+  const handleLocationClick = () => {
+    window.open('https://www.google.com/maps/place/Hospital+IV+Augusto+Hern%C3%A1ndez+Mendoza+EsSalud/@-14.066255,-75.7394389,17.68z/data=!4m6!3m5!1s0x9110e2c06b616717:0x63c6934f87d76da!8m2!3d-14.0655786!4d-75.7380884!16s%2Fg%2F1w0j0nx0?entry=ttu', '_blank', 'width=800,height=600');
+  };
+
   return (
     <div>
       <section className="quote-section">
@@ -15,21 +35,28 @@ const ContactNews = () => {
         <h2>BETTER INFORMATION, BETTER HEALTH</h2>
         <h3>News</h3>
         <div className="news-wrapper">
-          <div className="news-container">
-            {[...Array(4)].map((_, index) => (
+          <Slider {...settings} className="news-container">
+            {newsData.map((news, index) => (
               <div key={index} className="news-card">
-                <img src="https://via.placeholder.com/150" alt="news" />
+                <a href={news.link} target="_blank" rel="noopener noreferrer">
+                  <div className="news-image">
+                    <img src={news.image} alt="news" />
+                    <div className="image-overlay">
+                      <p>Ver noticia</p>
+                    </div>
+                  </div>
+                </a>
                 <div className="news-info">
-                  <p>Monday 05, September 2021 | By Author</p>
-                  <h4>This Article's Title goes Here, but not too long.</h4>
+                  <p>{news.date} | By {news.author}</p>
+                  <h4>{news.title}</h4>
                   <div className="news-stats">
-                    <span>👁️ 68</span>
-                    <span>❤️ 86</span>
+                    <span>👁️ {news.views}</span>
+                    <span>❤️ {news.likes}</span>
                   </div>
                 </div>
               </div>
             ))}
-          </div>
+          </Slider>
         </div>
       </section>
 
@@ -42,10 +69,10 @@ const ContactNews = () => {
             <p>(237) 681-812-255</p>
             <p>(237) 666-331-894</p>
           </div>
-          <div className="contact-card">
+          <div className="contact-card" onClick={handleLocationClick} style={{ cursor: 'pointer' }}>
             <h4>LOCATION</h4>
-            <p>0123 Some place</p>
-            <p>9876 Some country</p>
+            <p>Hospital IV Augusto Hernández Mendoza EsSalud</p>
+            <p>Nazca, Ica, Perú</p>
           </div>
           <div className="contact-card">
             <h4>EMAIL</h4>
