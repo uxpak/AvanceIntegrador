@@ -24,7 +24,7 @@ const newsData = [
       title: "Enfermería y tecnología: cómo la innovación está transformando la atención médica",
       views: 80,
       likes: 75,
-      link: "https://example.com/noticia3"
+      link: "https://www.paho.org/es/temas/enfermeria#:~:text=La%20enfermer%C3%ADa%20abarca%20el%20cuidado,atenci%C3%B3n%20centrada%20en%20la%20persona."
     },
     {
       image: "/rural.jpeg",
@@ -33,7 +33,7 @@ const newsData = [
       title: "El desafío de la enfermería rural: garantizar la atención médica en comunidades alejadas",
       views: 65,
       likes: 85,
-      link: "https://example.com/noticia4"
+      link: "https://www.paho.org/es/temas/enfermeria#:~:text=La%20enfermer%C3%ADa%20abarca%20el%20cuidado,atenci%C3%B3n%20centrada%20en%20la%20persona."
     },
     {
       image: "/trat.jpg",
@@ -42,7 +42,7 @@ const newsData = [
       title: "Avances en medicina: nuevos tratamientos para enfermedades crónicas",
       views: 100,
       likes: 70,
-      link: "https://example.com/noticia5"
+      link: "https://www.paho.org/es/temas/enfermeria#:~:text=La%20enfermer%C3%ADa%20abarca%20el%20cuidado,atenci%C3%B3n%20centrada%20en%20la%20persona."
     },
     {
       image: "/geriatria.jpg",
@@ -51,7 +51,7 @@ const newsData = [
       title: "Enfermería geriátrica: desafíos y recompensas de cuidar a la población de la tercera edad",
       views: 110,
       likes: 95,
-      link: "https://example.com/noticia6"
+      link: "https://www.paho.org/es/temas/enfermeria#:~:text=La%20enfermer%C3%ADa%20abarca%20el%20cuidado,atenci%C3%B3n%20centrada%20en%20la%20persona."
     },
     {
       image: "/infecto.jpg",
@@ -60,7 +60,7 @@ const newsData = [
       title: "La enfermería como agente clave en la lucha contra las enfermedades infecciosas",
       views: 85,
       likes: 80,
-      link: "https://example.com/noticia7"
+      link: "https://www.paho.org/es/temas/enfermeria#:~:text=La%20enfermer%C3%ADa%20abarca%20el%20cuidado,atenci%C3%B3n%20centrada%20en%20la%20persona."
     }
   ];
   export default newsData;
